@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+  </head>
+  <body>
+    <header class="header fixed-top container-fluid menu-top hidden-xs hidden-sm">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="list-unstyled navbar-right col-pad-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle topa" data-toggle="dropdown">
+                            <i class="glyphicon glyphicon-bell"></i>
+                            <i class="numheader">2</i>
+                            <span>Roberto</span>
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">cambiar contraseña</a></li>
+                            <li><a href="#">cerrar cessión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2 parent">
+                <img class="img-responsive" src="images/randstad.png" title="Randstad" alt="Randstad" />
+            </div>
+            <div class="col-xs-10">
+                <nav class="navbar menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active" data-submenu="sub1"><a href="#">Pedidos</a></li>
+                        <li data-submenu="sub2"><a href="#">Empleados</a></li>
+                        <li data-submenu="sub3"><a href="#">Validación</a></li>
+                        <li data-submenu="sub4"><a href="#">Evaluaciones</a></li>
+                        <li data-submenu="sub5"><a href="#">Precensia</a></li>
+                        <li data-submenu="sub6"><a href="#">Gestión de equipos</a></li>
+                        <li data-submenu="sub7"><a href="#">Informes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr>
+        <nav class="navbar menu-top" id="submenu">
+            <ul id="sub1" class="nav navbar-nav">
+                <li><a href="#">Encuentra trabajo</a></li>
+                <li><a href="#">Envia tu cv</a></li>
+                <li><a href="#">Validación</a></li>
+                <li><a href="#">Especialidades</a></li>
+                <li><a href="#">oficinas</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+            <ul id="sub2" class="nav navbar-nav">
+                <li><a href="#">XXXXXXXXXXXX</a></li>
+                <li><a href="#">Envia tu cv</a></li>
+                <li><a href="#">Validación</a></li>
+                <li><a href="#">Especialidades</a></li>
+                <li><a href="#">oficinas</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <div class="mobile-menu-top hidden-md hidden-lg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-7">
+                        <img class="img-responsive" src="images/randstad.png" title="Randstad" alt="Randstad" />
+                    </div>
+                    <div class="col-xs-5">
+                        <ul class="list-inline mobile-top pull-right topa">
+                            <li><i class="glyphicon glyphicon-bell"></i></li>
+                            <li>
+                                <button type="button" class="hamburger is-closed hidden-md hidden-lg" data-toggle="offcanvas">
+                                    <span class="hamb-top"></span>
+                                    <span class="hamb-middle"></span>
+                                    <span class="hamb-bottom"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>    
+        <div class="overlay hidden-md hidden-lg"></div>
+        <!-- Sidebar -->
+        <nav class="navbar mobile-navbar hidden-md hidden-lg" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                                   
+                <li>Roberto</li>
+                <li>
+                    <a href="#">cambiar contraseña</a>
+                </li>
+                <li>
+                    <a href="#">cerrar session</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">pedidos<span class="caret pull-right"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Encuentra trabajo</a></li>
+                        <li><a href="#">Envia tu cv</a></li>
+                        <li><a href="#">Validación</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">oficinas</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">empleados <span class="caret pull-right"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Encuentra trabajo</a></li>
+                        <li><a href="#">Envia tu cv</a></li>
+                        <li><a href="#">Validación</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">oficinas</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">validación</a>
+                </li>
+                <li>
+                    <a href="#">evaluaciones</a>
+                </li>
+                <li>
+                    <a href="#">precensia</a>
+                </li>
+                <li>
+                    <a href="#">gestión de equipos</a>
+                </li>
+                <li>
+                    <a href="#">informes</a>
+                </li>
+           </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+       <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="title-top">
+                 <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            <h1>pedidos</h1>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-pad-right">
+                            <a href=""><button type="button" class="btn button col-right">nuevo pedido</button></a>
+                        </div>
+
+                    </div>    
+                </div>
+            </div>    
+            <div class="container-fluid filters">
+                <div class="row">
+                    <div id="filterstitle1" class="col-xs-6">
+                        <h2>filtros</h2>
+                    </div>
+                    <div class="col-xs-6">
+                         <a role="button" data-toggle="collapse" href="#collapseFilters" aria-expanded="true" aria-controls="collapseFilters">
+                            <i id="buttonfilters" class="glyphicon pull-right"></i>
+                         </a>    
+                    </div>
+                    <div id="filterstitle2" class="col-xs-6">
+                        <h2 class="pull-right">filtros</h2>
+                    </div>
+                </div>    
+                <div id="collapseFilters" class="collapse" aria-labelledby="headingFilters">
+                    <form>
+        		<div class="row">
+                            <div id="phMaster_FiltroPedidos_ctl00_txtCodPedido_pnlCtl" class="col-xs-12 col-md-4">
+				<label for="phMaster_FiltroPedidos_ctl00_txtCodPedido_input" id="phMaster_FiltroPedidos_ctl00_txtCodPedido_lbl">Pedido:</label>       
+				<div id="phMaster_FiltroPedidos_ctl00_txtCodPedido_pnlInput" class="has-feedback">
+                                    <input name="ctl00$phMaster$FiltroPedidos$ctl00$txtCodPedido$input" type="text" maxlength="10" id="phMaster_FiltroPedidos_ctl00_txtCodPedido_input" class="form-control active">
+                                    <span class="form-control-feedback glyphicon glyphicon-chevron-down glyphicon-remove"></span>
+				</div>         
+                            </div>         
+                            <div id="phMaster_FiltroPedidos_ctl00_txtNodo_pnlCtl" class="col-xs-12 col-md-4">
+                                <label for="phMaster_FiltroPedidos_ctl00_txtNodo_input" id="phMaster_FiltroPedidos_ctl00_txtNodo_lbl">Centro Trabajo:</label>
+                                <div id="phMaster_FiltroPedidos_ctl00_txtNodo_pnlInput" class="has-feedback">
+                                    <input name="ctl00$phMaster$FiltroPedidos$ctl00$txtNodo$input" type="text" maxlength="100" id="phMaster_FiltroPedidos_ctl00_txtNodo_input" class="form-control">
+                                    <a id="phMaster_FiltroPedidos_ctl00_txtNodo_btnSearch" class="glyphicon glyphicon-search form-control-feedback" href="javascript:__doPostBack('ctl00$phMaster$FiltroPedidos$ctl00$txtNodo$btnSearch','')"></a>			
+                                </div>
+                                <div id="phMaster_FiltroPedidos_ctl00_txtNodo_pnlVal" class="col-md-2">								
+                                </div>	
+                            </div>
+                        </div>	
+                        <div class="row">
+                            <div id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_pnlctlDesde" class="col-xs-12 col-md-4">
+                                <label for="phMaster_FiltroPedidos_ctl00_txtFechasPedido_inputDesde" id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_lblDesde">Fecha Desde:</label>
+                                <div id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_pnlInputDesde" class="has-feedback">
+                                    <div id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_pnlPickerDesde" class="input-group date"> 
+                                        <input name="ctl00$phMaster$FiltroPedidos$ctl00$txtFechasPedido$inputDesde" type="text" id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_inputDesde" class="form-control">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                                <div id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_pnlValDesde" class="col-md-4">
+                                    <input type="hidden" name="ctl00$phMaster$FiltroPedidos$ctl00$txtFechasPedido$meeFechaDesde_ClientState" id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_meeFechaDesde_ClientState">
+                                    <span id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_mevFechaDesde" style="display:none;" class="glyphicon-chevron-down"></span>
+                                    <input type="hidden" name="ctl00$phMaster$FiltroPedidos$ctl00$txtFechasPedido$vcemevFechaDesde_ClientState" id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_vcemevFechaDesde_ClientState">
+                                </div>
+                            </div>
+                            <div id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_pnlCtlHasta" class="col-xs-12 col-md-4">
+                                <label for="phMaster_FiltroPedidos_ctl00_txtFechasPedido_inputHasta" id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_lblHasta">Fecha Hasta:</label>
+                                <div id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_pnlInputHasta" class="has-feedback">
+                                    <div id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_pnlPickerHasta" class="input-group date"> 
+                                        <input name="ctl00$phMaster$FiltroPedidos$ctl00$txtFechasPedido$inputHasta" type="text" id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_inputHasta" class="form-control">
+                                        <span class="input-group-addon"><span class="input-group-addon glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                                <div id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_pnlValHasta" class="col-md-4">
+                                    <input type="hidden" name="ctl00$phMaster$FiltroPedidos$ctl00$txtFechasPedido$meeFechaHasta_ClientState" id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_meeFechaHasta_ClientState">
+                                    <span id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_mevFechaHasta" style="display:none;" class="glyphicon-chevron-down"></span>
+                                    <input type="hidden" name="ctl00$phMaster$FiltroPedidos$ctl00$txtFechasPedido$vcemevFechaHasta_ClientState" id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_vcemevFechaHasta_ClientState">
+                                    <span id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_cvHasta" style="display:none;" class="glyphicon-chevron-down"></span>
+                                    <input type="hidden" name="ctl00$phMaster$FiltroPedidos$ctl00$txtFechasPedido$vceDesdeHasta_ClientState" id="phMaster_FiltroPedidos_ctl00_txtFechasPedido_vceDesdeHasta_ClientState">
+                                </div>
+                            </div>
+                        </div>	
+    			<div class="row">
+                            <div id="phMaster_FiltroPedidos_ctl00_ddlMotivosContrato_pnlCtl" class="col-xs-12 col-md-4">
+                                <label for="phMaster_FiltroPedidos_ctl00_ddlMotivosContrato_input" id="phMaster_FiltroPedidos_ctl00_ddlMotivosContrato_lbl">Motivo Contrato:</label>
+                                <div id="phMaster_FiltroPedidos_ctl00_ddlMotivosContrato_pnlInput" class="has-feedback">
+                                    <select size="4" name="ctl00$phMaster$FiltroPedidos$ctl00$ddlMotivosContrato$input" id="phMaster_FiltroPedidos_ctl00_ddlMotivosContrato_input" data-style="selectpicker form-control" class="selectpicker form-control" multiple="" style="display: none;">
+					<option value="1">Acumulación de Tareas</option>
+					<option value="3">Interinidad</option>
+					<option value="6">Maternidad</option>
+					<option value="2">Obra o Servicio</option>
+					<option value="4">Prácticas</option>
+
+                                    </select>
+                                    <div class="btn-group bootstrap-select show-tick form-control"><button type="button" class="btn dropdown-toggle selectpicker form-control" data-toggle="dropdown" data-id="phMaster_FiltroPedidos_ctl00_ddlMotivosContrato_input" title="Interinidad, Obra o Servicio"><span class="filter-option pull-left">Interinidad, Obra o Servicio</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open" style="max-height: 297px; overflow: hidden; min-height: 92px;"><ul class="dropdown-menu inner selectpicker" role="menu" style="max-height: 285px; overflow-y: auto; min-height: 80px;"><li data-original-index="0"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Acumulacion de Tareas</span>"><span class="text">Acumulación de Tareas</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1" class="selected"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Interinidad</span>"><span class="text">Interinidad</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2" class=""><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Maternidad</span>"><span class="text">Maternidad</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3" class="selected"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Obra o Servicio</span>"><span class="text">Obra o Servicio</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Practicas</span>"><span class="text">Prácticas</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+                                </div>	
+                            </div>
+                            <div id="phMaster_FiltroPedidos_ctl00_ddlEstados_pnlCtl" class="col-xs-12 col-md-4">
+                                <label for="phMaster_FiltroPedidos_ctl00_ddlEstados_input" id="phMaster_FiltroPedidos_ctl00_ddlEstados_lbl">Estados:</label>
+                                <div id="phMaster_FiltroPedidos_ctl00_ddlEstados_pnlInput" class="has-feedback">
+                                    <select size="4" name="ctl00$phMaster$FiltroPedidos$ctl00$ddlEstados$input" id="phMaster_FiltroPedidos_ctl00_ddlEstados_input" data-style="selectpicker form-control" class="selectpicker form-control" multiple="" style="display: none;">
+                                        <option value="10">Borrador</option>
+                                        <option value="20">Pendiente Aprobación</option>
+                                        <option value="30">Pendiente Modificación</option>
+                                        <option value="40">Pendiente Cobertura</option>
+                                        <option value="50">Parcialmente Cubierto</option>
+                                        <option value="60">Cubierto</option>
+                                        <option value="70">Anulado</option>
+                                        <option value="80">Cancelado</option>
+                                        <option value="90">Finalizado</option>
+                                    </select>
+                                    <div class="btn-group bootstrap-select show-tick form-control"><button type="button" class="btn dropdown-toggle selectpicker form-control" data-toggle="dropdown" data-id="phMaster_FiltroPedidos_ctl00_ddlEstados_input" title="Pendiente Cobertura, Cubierto"><span class="filter-option pull-left">Pendiente Cobertura, Cubierto</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open" style="max-height: 297px; overflow: hidden; min-height: 92px;"><ul class="dropdown-menu inner selectpicker" role="menu" style="max-height: 285px; overflow-y: auto; min-height: 80px;"><li data-original-index="0"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Borrador</span>"><span class="text">Borrador</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Pendiente Aprobacion</span>"><span class="text">Pendiente Aprobación</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Pendiente Modificacion</span>"><span class="text">Pendiente Modificación</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3" class="selected"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Pendiente Cobertura</span>"><span class="text">Pendiente Cobertura</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Parcialmente Cubierto</span>"><span class="text">Parcialmente Cubierto</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5" class="selected"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Cubierto</span>"><span class="text">Cubierto</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Anulado</span>"><span class="text">Anulado</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Cancelado</span>"><span class="text">Cancelado</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Finalizado</span>"><span class="text">Finalizado</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+                                </div>	
+                            </div>                
+                            <div id="phMaster_FiltroPedidos_ctl00_ddlSolicitante_pnlCtl" class="col-xs-12 col-md-4" style="overflow:visible">
+                                <label for="phMaster_FiltroPedidos_ctl00_ddlSolicitante_input" id="phMaster_FiltroPedidos_ctl00_ddlSolicitante_lbl">Solicitante:</label>
+                                <div id="phMaster_FiltroPedidos_ctl00_ddlSolicitante_pnlInput" class="has-feedback fcselect">
+                                    <select name="ctl00$phMaster$FiltroPedidos$ctl00$ddlSolicitante$input" id="phMaster_FiltroPedidos_ctl00_ddlSolicitante_input" class="form-control validadorCombo fcselect" data-live-search="true">
+					<option selected="selected" value="0">&lt;Todos&gt;</option>
+					<option value="1">Ester Ma</option>
+                                    </select>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="row filters-buttons">
+                            <a id="phMaster_FiltroPedidos_lnkbtnBuscar" class="btn button-primary button" href="javascript:__doPostBack('ctl00$phMaster$FiltroPedidos$lnkbtnBuscar','')">Buscar</a>
+                            <a id="phMaster_FiltroPedidos_lnkbtnExcel" class="btn button-primary button" href="javascript:__doPostBack('ctl00$phMaster$FiltroPedidos$lnkbtnExcel','')">Generar Excel</a>
+                            <a id="phMaster_FiltroPedidos_lnkbtnLimpiar" class="btn button-secondary button" href="javascript:__doPostBack('ctl00$phMaster$FiltroPedidos$lnkbtnLimpiar','')">Limpiar</a>
+			</div>
+                    </form>
+                </div>    
+            </div>
+            <div class="resultorder">
+                <div class="container-fluid ">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h2>resultados</h2>
+                        </div>
+                        <div class="col-xs-6">
+                            <a role="button" data-toggle="collapse" href="#collapseResults" aria-expanded="true" aria-controls="collapseResults">
+                                <i id="buttonresults" class="glyphicon glyphicon-chevron-down pull-right"></i>
+                            </a>    
+                        </div>
+                    </div>  
+                    <div id="collapseResults" class="collapse" aria-labelledby="headingResults">
+                        <form>
+                            <div class="table-responsive"> 
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>nº pedido</th>
+                                            <th>nombre trabajador</th>
+                                            <th>NIS</th>
+                                            <th>motivo</th>
+                                            <th>fecha inicio</th>
+                                            <th>fecha fin</th>
+                                            <th>estado</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" value=""></td>
+                                            <td>1801290001</td>
+                                            <td>Roldán Rodriguéz, David</td>
+                                            <td>-</td>
+                                            <td>Absentismo</td>
+                                            <td>30/05/2018</td>
+                                            <td>30/05/2018</td>
+                                            <td><button type="button" class="btn validation">PDTE. VALIDACIÓN</button></td>
+                                            <td class="tdcolor1" id="tdcolor">
+                                                <div class="dropdown">
+                                                    <a role="button" data-toggle="collapse" href="#tdmenu1" aria-expanded="true" aria-controls="tdmenu1">
+                                                        <i class="glyphicon glyphicon-option-horizontal"></i>
+                                                    </a>
+                                                    <ul id="tdmenu1" class="dropdown-menu">
+                                                        <li><a href="#">ver documentos</a></li>
+                                                        <li><a href="#">evaluar</a></li>
+                                                        <li><a href="#">relatos</a></li>
+                                                        <li><a href="#">histórico equipos</a></li>
+                                                        <li><a href="#">histórico horarios</a></li>
+                                                    </ul>
+                                                </div>    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" value=""></td>
+                                            <td>1801290001</td>
+                                            <td>Roldán Rodriguéz, David</td>
+                                            <td>-</td>
+                                            <td>Absentismo</td>
+                                            <td>30/05/2018</td>
+                                            <td>30/05/2018</td>
+                                            <td><button type="button" class="btn recruitment">PDTE. CONTRACIÓN</button></td>
+                                            <td class="tdcolor1" id="tdcolor">
+                                                <div class="dropdown">
+                                                    <a role="button" data-toggle="collapse" href="#tdmenu2" aria-expanded="true" aria-controls="tdmenu2">
+                                                        <i class="glyphicon glyphicon-option-horizontal"></i>
+                                                    </a>
+                                                    <ul id="tdmenu2" class="dropdown-menu">
+                                                        <li><a href="#">ver documentos</a></li>
+                                                        <li><a href="#">evaluar</a></li>
+                                                        <li><a href="#">relatos</a></li>
+                                                        <li><a href="#">histórico equipos</a></li>
+                                                        <li><a href="#">histórico horarios</a></li>
+                                                    </ul>
+                                                </div>    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" value=""></td>
+                                            <td>1801290001</td>
+                                            <td>Roldán Rodriguéz, David</td>
+                                            <td>-</td>
+                                            <td>Absentismo</td>
+                                            <td>30/05/2018</td>
+                                            <td>30/05/2018</td>
+                                            <td><button type="button" class="btn contract">CON CONTRATO</button></td>
+                                            <td class="tdcolor1" id="tdcolor">
+                                                <div class="dropdown">
+                                                    <a role="button" data-toggle="collapse" href="#tdmenu3" aria-expanded="true" aria-controls="tdmenu3">
+                                                        <i class="glyphicon glyphicon-option-horizontal"></i>
+                                                    </a>
+                                                    <ul id="tdmenu3" class="dropdown-menu">
+                                                        <li><a href="#">ver documentos</a></li>
+                                                        <li><a href="#">evaluar</a></li>
+                                                        <li><a href="#">relatos</a></li>
+                                                        <li><a href="#">histórico equipos</a></li>
+                                                        <li><a href="#">histórico horarios</a></li>
+                                                    </ul>
+                                                </div>    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" value=""></td>
+                                            <td>1801290001</td>
+                                            <td>Roldán Rodriguéz, David</td>
+                                            <td>-</td>
+                                            <td>Absentismo</td>
+                                            <td>30/05/2018</td>
+                                            <td>30/05/2018</td>
+                                            <td><button type="button" class="btn validation">PDTE. VALIDACIÓN</button></td>
+                                            <td class="tdcolor1" id="tdcolor">
+                                                <div class="dropdown">
+                                                    <a role="button" data-toggle="collapse" href="#tdmenu4" aria-expanded="true" aria-controls="tdmenu4">
+                                                        <i class="glyphicon glyphicon-option-horizontal"></i>
+                                                    </a>
+                                                    <ul id="tdmenu4" class="dropdown-menu">
+                                                        <li><a href="#">ver documentos</a></li>
+                                                        <li><a href="#">evaluar</a></li>
+                                                        <li><a href="#">relatos</a></li>
+                                                        <li><a href="#">histórico equipos</a></li>
+                                                        <li><a href="#">histórico horarios</a></li>
+                                                    </ul>
+                                                </div>    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" value=""></td>
+                                            <td>1801290001</td>
+                                            <td>Roldán Rodriguéz, David</td>
+                                            <td>-</td>
+                                            <td>Absentismo</td>
+                                            <td>30/05/2018</td>
+                                            <td>30/05/2018</td>
+                                            <td><button type="button" class="btn validation">PDTE. VALIDACIÓN</button></td>
+                                            <td class="tdcolor1" id="tdcolor">
+                                                <div class="dropdown">
+                                                    <a role="button" data-toggle="collapse" href="#tdmenu5" aria-expanded="true" aria-controls="tdmenu5">
+                                                        <i class="glyphicon glyphicon-option-horizontal"></i>
+                                                    </a>
+                                                    <ul id="tdmenu5" class="dropdown-menu">
+                                                        <li><a href="#">ver documentos</a></li>
+                                                        <li><a href="#">evaluar</a></li>
+                                                        <li><a href="#">relatos</a></li>
+                                                        <li><a href="#">histórico equipos</a></li>
+                                                        <li><a href="#">histórico horarios</a></li>
+                                                    </ul>
+                                                </div>    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" value=""></td>
+                                            <td>1801290001</td>
+                                            <td>Roldán Rodriguéz, David</td>
+                                            <td>-</td>
+                                            <td>Absentismo</td>
+                                            <td>30/05/2018</td>
+                                            <td>30/05/2018</td>
+                                            <td><button type="button" class="btn validation">PDTE. VALIDACIÓN</button></td>
+                                            <td class="tdcolor1" id="tdcolor">
+                                                <div class="dropdown">
+                                                    <a role="button" data-toggle="collapse" href="#tdmenu6" aria-expanded="true" aria-controls="tdmenu6">
+                                                        <i class="glyphicon glyphicon-option-horizontal"></i>
+                                                    </a>
+                                                    <ul id="tdmenu6" class="dropdown-menu">
+                                                        <li><a href="#">ver documentos</a></li>
+                                                        <li><a href="#">evaluar</a></li>
+                                                        <li><a href="#">relatos</a></li>
+                                                        <li><a href="#">histórico equipos</a></li>
+                                                        <li><a href="#">histórico horarios</a></li>
+                                                    </ul>
+                                                </div>    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" value=""></td>
+                                            <td>1801290001</td>
+                                            <td>Roldán Rodriguéz, David</td>
+                                            <td>-</td>
+                                            <td>Absentismo</td>
+                                            <td>30/05/2018</td>
+                                            <td>30/05/2018</td>
+                                            <td><button type="button" class="btn validation">PDTE. VALIDACIÓN</button></td>
+                                            <td class="tdcolor1" id="tdcolor">
+                                                <div class="dropdown">
+                                                    <a role="button" data-toggle="collapse" href="#tdmenu7" aria-expanded="true" aria-controls="tdmenu7">
+                                                        <i class="glyphicon glyphicon-option-horizontal"></i>
+                                                    </a>
+                                                    <ul id="tdmenu7" class="dropdown-menu">
+                                                        <li><a href="#">ver documentos</a></li>
+                                                        <li><a href="#">evaluar</a></li>
+                                                        <li><a href="#">relatos</a></li>
+                                                        <li><a href="#">histórico equipos</a></li>
+                                                        <li><a href="#">histórico horarios</a></li>
+                                                    </ul>
+                                                </div>    
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>    
+                    </div>    
+                </div>
+            </div>    
+        </div>
+        <!-- /#page-content-wrapper -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row vertical-align">
+                    <div class="col-xs-12 col-md-6">
+                        <span>© 2018 Randstad España S.L.U. Todos los derechos reservados </span>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <img class="img-responsive col-right" src="images/randstad.png" title="Randstad" alt="Randstad" />
+                    </div>
+                </div>
+            </div>
+        </footer>  
+    </div>
+    <!-- /#wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.es.min.js"></script>
+    <script src="js/template.js"></script>	
+  </body>
+</html>

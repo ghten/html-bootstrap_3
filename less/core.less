@@ -1,0 +1,806 @@
+// --------------------------------------------------
+// core
+// --------------------------------------------------
+// --------------------------------------------------
+// Font
+//---------------------------------------------------
+@font-face {
+  font-family: 'graphik';
+  src:  url('../font/Graphik Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+// -----------------------------------------------------
+body {
+    //font-family: graphik;
+    height: 100%;
+    background-color: @light-grey;
+    color: @secondarycolor;
+    font-size: 18px;
+}
+a, a:hover, a:active, a:focus {
+    color: @secondarycolor;
+    text-decoration: none;
+}
+a:focus {
+    outline-offset: 0px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+	background-color: transparent;
+}
+//------------------------------------------------------
+// form control
+//------------------------------------------------------
+.form-control {
+  height: @heightfc;
+  border-radius: @bordrad;
+  color: @character;
+  font-size: @fontsizeinput;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: @white;
+}
+
+//form-control disabled
+.form-control[disabled] {
+    border: solid 1px @formel;  
+    color : @formel;
+}
+
+// --------------------------------------------------
+// input in form-control
+// --------------------------------------------------
+form input:hover {
+    border : solid 1px @primarycolor;
+}
+form input.active {
+    border : solid 2px @primarycolor;
+}
+form input.success {
+    border: solid 1px @success;
+}
+form input.has-error {
+  border: solid 1px @colorerror;
+  background-color: @backerror;
+}
+.form-horizontal .has-feedback .form-control-feedback {
+    top: 12px;
+    right: 5px;
+}
+// ---------------------------------------------------
+// manage error
+// ---------------------------------------------------
+.has-feedback label ~ .form-control-feedback {
+    top: @topgl;
+}
+.form-control-feedback {
+    color: @primarycolor;
+    top: 15%;
+}
+.has-feedback .form-control {
+    padding-right: 0px !important;
+}
+// ---------------------------------------------------
+// label in form
+// ---------------------------------------------------
+label {
+    font-size: @fontsizelabel;
+}
+// ---------------------------------------------------
+// help block in form
+// ---------------------------------------------------
+.help-block {
+    color: @colorerror;
+}
+// ---------------------------------------------------
+// Select in form
+// ---------------------------------------------------
+select.select  {
+    padding: 5px 0px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+ 
+    -webkit-appearance: none;    // removes borders and downarrow button of the select box from webkit browsers.
+    -moz-appearance: none;  // cannot remove the downarrow button of the mozilla browsers.
+    appearance: none;
+ 
+    text-indent: 0.01px;
+    text-overflow: '';  // with text-indent this overflow empty string removes the down arrow of the mozilla browsers.
+} 
+select.select:focus  {
+    outline: none;
+}
+//used for select manage glyphico
+.fcselect {
+    position:relative;
+}
+.fcselect:after {
+    top: 40%;
+    right: 1%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: @primarycolor;
+    border-width: 7px;
+    margin-top: 0px;
+    z-index: 100;
+}
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    color: @primarycolor;
+    border-width: 8px 6px 8px 6px;
+}
+// ---------------------------------------------------------
+// plugin select
+//----------------------------------------------------------
+.bootstrap-select.btn-group .btn .filter-option {
+    width: 90%;   
+}
+.select2-container .select2-choice{
+    background-image:none;
+    width: auto;
+    font-size: inherit;
+    display: inline-block;
+    position: initial;
+    width: -webkit-fill-available;
+    background: white;
+}
+.select2-container .select2-choice .select2-arrow {
+    background-image:none;    
+    background: white;
+    border-left:none;
+    width: initial;
+}
+.form-control.select2-container {
+    height: auto !important;
+    padding: 3px;
+}
+.select2-container .select2-choice .select2-arrow b {
+   border-color: @primarycolor transparent transparent transparent;
+    border-style: solid;
+    border-width: 8px 6px 8px 6px;
+    height: 0;
+    left: -18px;
+    margin-left: 19px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+.bootstrap-select>.btn {
+    border: 1px solid @light-grey-dark;
+}
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices {
+     -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, .3);
+     box-shadow: 0 0 0px rgba(0, 0, 0, .3);
+}
+.select2-dropdown-open {
+    background: none;
+    background-color: @white;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, @white), color-stop(0.5, @white));
+    background-image: -webkit-linear-gradient(center bottom, @white 0%, @white 50%);
+    background-image: -moz-linear-gradient(center bottom, @white 0%, @white 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+    background-image: linear-gradient(to top, @white 0%, @white 50%);
+}
+.select2-container-disabled {
+    background-color: @white; 
+}
+.select2-container.select2-container-disabled .select2-choice {
+	background-color: @white;
+	border: 0px;
+}
+.select2-container.select2-container-disabled .select2-choice .select2-arrow {
+	background-color: @white;
+}
+//----------------------------------------------------------
+// header
+//----------------------------------------------------------
+.header {
+    background-color: @primarycolor;
+    color: @white;
+    padding-bottom: 20px;
+}
+.header span {
+    padding: 0px 5px;
+}
+.header .row:first-of-type {
+    margin-top: 6px;
+}
+.header .glyphicon-bell{
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
+.header .numheader{
+    position: absolute;
+    right: 78%;
+    z-index: 2;
+    font-size: 1rem;
+    width: 15px;
+    line-height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: @tomato;
+}
+// centre vertically image
+.header .parent {
+    margin-top: 12px;
+}
+.topa {
+    color: @light-grey;
+}
+//------------------------------------------------------------------------
+//manage mobile menu top
+//------------------------------------------------------------------------
+// test
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.mobile-menu-top {
+    background-color: #2175d9;
+}
+// bell glyphicon in mobile
+#wrapper .glyphicon-bell{
+    font-size: 1.8rem;
+    top: 7px;
+}
+#wrapper img {
+   margin-top: 7px;
+}
+#sidebar-wrapper {
+    z-index: 1000;
+    left: 220px;
+    width: 0;
+    height: 100%;
+    margin-left: -220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: @light-grey;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebar-wrapper::-webkit-scrollbar {
+    display: none;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 100%;
+}
+#page-content-wrapper {
+    width: 100%;
+}
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -220px;
+}
+.mobile-navbar {
+    border-radius: 0;
+    border-width: 0 0 1px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-top: 10px;
+}
+/*-------------------------------*/
+/*     Sidebar nav styles        */
+/*-------------------------------*/
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    position: relative; 
+    line-height: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.sidebar-nav li a {
+    display: block;
+    color: @primarycolor;
+    text-decoration: none;
+    padding: 15px 0px;
+}
+.nav li a:hover,
+.nav li a:active,
+.nav li a:focus,
+.nav .open>a,
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus{
+    color: @primarycolor;
+    text-decoration: none;
+    background-color: transparent;
+}
+.sidebar-nav > li:first-child {
+    color: @black;
+    font-weight: bold;
+    padding-top: 15px;
+    border-top: solid 1px @light-grey-dark;
+}
+.sidebar-nav > li:nth-child(2) a {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 12px;
+}
+.sidebar-nav > li:nth-child(3) a {
+     padding-top: 10px;  
+     font-size: 12px;
+}
+.sidebar-nav > li:nth-child(4) {
+    border-top: solid 1px @light-grey-dark;  
+}
+.sidebar-nav > li:nth-child(5) {
+    border-top: solid 1px @light-grey-dark;   
+}
+.sidebar-nav > li:nth-child(6) {
+    border-top: solid 1px @light-grey-dark;   
+}
+.sidebar-nav > li:nth-child(7) {
+    border-top: solid 1px @light-grey-dark;   
+}
+.sidebar-nav > li:nth-child(8) {
+    border-top: solid 1px @light-grey-dark;   
+}
+.sidebar-nav > li:nth-child(9) {
+    border-top: solid 1px @light-grey-dark;   
+}
+.mobile-navbar ul {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 20px;
+    line-height: 44px;
+}
+.sidebar-nav .dropdown-menu {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    background-color: @light-grey;
+    box-shadow: none;
+}
+/*-------------------------------*/
+/*       Hamburger-Cross         */
+/*-------------------------------*/
+
+.hamburger {
+    position: relative;
+    z-index: 999;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: none;
+}
+.hamburger:hover,
+.hamburger:focus,
+.hamburger:active {
+    outline: none;
+}
+.hamburger.is-closed:before {
+    content: '';
+    display: block;
+    width: 100px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    opacity: 0;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-closed:hover:before {
+    opacity: 1;
+    display: block;
+    -webkit-transform: translate3d(-100px,0,0);
+    -webkit-transition: all .35s ease-in-out;
+}
+
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom,
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom {
+    background-color: @light-grey;
+}
+.hamburger.is-closed .hamb-top { 
+    top: 5px; 
+    -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-closed .hamb-middle {
+    top: 50%;
+    margin-top: -2px;
+}
+.hamburger.is-closed .hamb-bottom {
+     bottom: 5px;  
+    -webkit-transition: all .35s ease-in-out;
+}
+
+.hamburger.is-closed:hover .hamb-top {
+  top: 0;
+  -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-closed:hover .hamb-bottom {
+    bottom: 0;
+    -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+    background-color: #1a1a1a;
+}
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-bottom {
+    top: 50%;
+    margin-top: -2px;  
+}
+.hamburger.is-open .hamb-top { 
+    -webkit-transform: rotate(45deg);
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+}
+.hamburger.is-open .hamb-middle { display: none; }
+.hamburger.is-open .hamb-bottom {
+    -webkit-transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+}
+.hamburger.is-open:before {
+    content: '';
+    display: block;
+    width: 100px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    opacity: 0;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transition: all .35s ease-in-out;
+}
+.hamburger.is-open:hover:before {
+    opacity: 1;
+    display: block;
+    -webkit-transform: translate3d(-100px,0,0);
+    -webkit-transition: all .35s ease-in-out;
+}
+.mobile-top li {
+    padding-left: 5px;
+}
+/*-------------------------------*/
+/*            Overlay            */
+/*-------------------------------*/
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(250,250,250,.8);
+    z-index: 1;
+}
+//------------------------------------------------------------------------
+// Menu
+//------------------------------------------------------------------------
+.header nav a, header nav a:hover, header nav a:active, header nav a:focus {
+    color: @light-grey;
+}
+.header nav .active {
+  border-bottom: 2px solid @white;
+}
+.header .navbar:first-of-type {
+    margin-bottom: 0px;
+}
+// hr
+.header hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+//hide submenus
+.header #submenu #sub2, #submenu #sub3, #submenu #sub4, #submenu #sub5, #submenu #sub6, #submenu #sub7 {
+    display: none;
+}
+//--------------------------------------------------------------
+// titles
+//-------------------------------------------------------------
+.h1, h1 {
+    font-size: 56px;
+    margin-top: 0px;
+    color: @light-grey;
+    margin-bottom: 40px;
+}
+.h2, h2 {
+    font-size: 40px;
+}
+//--------------------------------------------------------------
+//buttons
+//--------------------------------------------------------------
+.button {
+    height: 56px;
+    font-size: 18px;
+    width: 167px;
+    padding: 14px 12px;
+    margin-right: 9px;
+}
+.button-primary {
+    background-color: @primarycolor;
+    color: @white;
+}
+.button-secondary {
+    background-color: @white;
+    color: @black;
+    border: solid 2px @black;
+}
+
+//----------------------------------------------------------
+//content
+//----------------------------------------------------------
+.title-top  {
+    background-color: @primarycolor;
+}
+//----------------------------------------------------------
+//Table
+//----------------------------------------------------------
+.table td, .table th {
+   text-align: center;   
+}
+//----------------------------------------------------------
+//date picker
+//----------------------------------------------------------
+.group-date .glyphicon-calendar {
+    font-size: 20px;
+}
+.daterangepicker {
+	color: inherit;
+	background-color: @light-grey;
+	border: 1px solid @light-grey;
+	margin-top: 7px;
+	top: 100px;
+	left: 20px;
+	font-family: arial;
+	font-size: 15px;
+	line-height: 1em;
+	display: none;
+}
+.daterangepicker .calendar-table {
+	border: 1px solid @light-grey;
+	background-color: @light-grey;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+	background-color: @primarycolor;
+	border-color: transparent;
+	color: @secondarycolor;
+}
+.daterangepicker td.in-range.end-date {
+	background-color: @primarycolor;
+    color: @secondarycolor;
+}
+.daterangepicker td.start-date, .daterangepicker td.start-date.end-date {
+	border-radius: 50px;
+}
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {
+	background-color: @light-grey;
+	border-color: transparent;
+	color: @secondarycolor;
+}
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td, .datepicker {
+	font-size: 18px;
+}
+.daterangepicker td.in-range {
+	background-color: @secondarycolor;
+	border-color: transparent;
+	color: @light-grey;
+}
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+	font-size: 18px;
+	border-radius: 50px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu {
+	font-size: 18px;
+	background-color: @light-grey;
+}
+.bootstrap-datetimepicker-widget td.active, .bootstrap-datetimepicker-widget td.active:hover {
+	background-color: @primarycolor;
+    color: @secondarycolor;
+}
+.bootstrap-datetimepicker-widget td, .bootstrap-datetimepicker-widget th {
+	border-radius: 50px;
+}
+.bootstrap-datetimepicker-widget td.today::before {
+	display: none;
+}
+.bootstrap-datetimepicker-widget td.today, .daterangepicker td.today {
+	background-color: @calendar-day;
+    color: @secondarycolor;
+}
+//----------------------------------------------------------
+//footer
+//----------------------------------------------------------
+.footer {
+    background-color: @secondarycolor;
+    color: @light-grey;
+}
+.footer .container-fluid {
+    height: 100px;
+}
+.footer .row {
+    padding-top: 25px;
+}
+.footer .col-xs-6:last-of-type {
+    padding-right: 0px;
+}
+//----------------------------------------------------------
+//modal
+//----------------------------------------------------------
+.modal-content {
+    background-color: @light-grey;
+}
+.modal-header {
+    border-bottom: 0px;
+}
+.modal-footer {
+    border-top: 0px;
+}
+.close {
+    font-size: 30px;
+    font-weight: normal;
+    color: @secondarycolor;
+    opacity: 1;
+}
+//------------------------------------------------------------
+// ??????????????????????????????????????????????????
+//------------------------------------------------------------
+#contextMenu {
+  position: absolute;
+  display:none;
+}
+.panel-flotante-inferior {
+color: @light-grey;
+background: @secondarycolor;
+position:sticky; /*El div será ubicado con relación a la pantalla*/
+left:0px; /*A la derecha deje un espacio de 0px*/
+right:0px; /*A la izquierda deje un espacio de 0px*/
+bottom:0px; /*Abajo deje un espacio de 0px*/
+height:50px; /*alto del div*/
+z-index:2; 
+ }
+ .glyphiconSubmenu{
+    top: 8px;
+}
+//----------------------------------------------------------
+//media querie
+//----------------------------------------------------------
+@media (max-width: @screen-xs-end) {
+    // Arrow in select
+    .fcselect:after {right: 2%;}
+    .title-top  {
+        border-bottom: solid 1px @light-grey;
+        padding-bottom: 20px;
+    }
+    .title-top h1 {
+        margin-top: 10px;
+    }
+    //line in top
+    #page-content-wrapper {
+        border-top: solid 2px @light-grey;
+    }
+    //manage bottom 
+    #wrapper .navbar-fixed-bottom {
+	z-index: 999;
+    }
+    .footer {
+        padding-bottom: 20px;
+    }
+}    
+@media (min-width: @screen-xs) and (max-width: @screen-sm-end) {
+    // Arrow in select
+    .fcselect:after {right: 2%;}  
+    .title-top  {
+        border-bottom: solid 1px @light-grey;
+        padding-bottom: 20px;
+    }
+    .title-top h1 {
+        margin-top: 10px;
+    }
+    .mobile-top {
+        margin-top: 10px;
+    }
+        //line in top
+    #page-content-wrapper {
+        border-top: solid 2px @light-grey;
+    }
+    #wrapper .navbar-fixed-bottom {
+	z-index: 999;
+    }
+    .footer {
+        padding-bottom: 20px;
+    }
+}
+@media (min-width: @screen-sm) and (max-width: @screen-md-end) { 
+    // Arrow in select
+    .fcselect:after {right: 2%;}  
+    //line after menu
+    .title-top  {
+        border-bottom: solid 1px @light-grey;
+        padding-bottom: 20px;
+    }
+    .title-top h1 {
+        margin-top: 10px;
+    }
+    .mobile-top {
+        margin-top: 15px;
+    }
+    //line in top
+    #page-content-wrapper {
+        border-top: solid 2px @light-grey;
+    }
+    #wrapper .navbar-fixed-bottom {
+	z-index: 999;
+    }
+    .footer {
+        padding-bottom: 20px;
+    }
+}
+@media (min-width: @screen-md) and (max-width: @screen-lg-end) { 
+    .col-right {
+        float: right !important;
+    }
+    .col-pad-right {
+        padding-right: 15px;
+    }
+    .container-fluid {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .col-md-4{
+        width: 33.33333333333333%;
+        padding-bottom: 10px;
+    }
+}    
+@media (min-width: @screen-lg) { 
+    .col-right {
+            float: right !important;
+    }
+    .col-pad-right {
+        padding-right: 15px;
+    }
+    .container-fluid {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}

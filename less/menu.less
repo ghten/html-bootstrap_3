@@ -1,0 +1,69 @@
+﻿
+//menu
+.header nav a, header nav a:hover, header nav a:active, header nav a:focus {
+    color: @white;
+    font-size: 16px;
+}
+.mainmenu {
+    border-bottom: 1px solid @white;
+}
+.header .navbar {
+	margin-bottom: 0px;
+}
+.header .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+	background-color: @primarycolor;
+	border-color: @primarycolor;
+}
+.header nav .open {
+  border-bottom: 2px solid @white;
+}
+.navigacija {
+    position:relative !important;
+}
+.navbar-collapse.collapse {
+    overflow:hidden !important;
+}
+.navigacija > ul  {
+    margin-top:5px;
+}
+.dropdown-menu {
+    width: 100%;
+    position: fixed;
+    top: 105px;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    margin: 0 auto;
+    background-color: @primarycolor;
+    box-shadow: none;
+    border: none;
+    margin-left: 100px;
+}
+.dropdown-menu ul {
+    margin-left: 100px;
+}
+.dropdown-menu li {
+    display:inline-block;
+}
+.dropdown-menu li.dropdown .dropdown-menu {
+    top:210px;
+}
+.dropdown-menu li.dropdown {
+    background:url(http://decombh.org/img/nav_down.png) no-repeat bottom right !important;
+    background-position: 5px 9px !important;
+}
+.navbar-brand img {
+    max-width:130px;
+}
+@media (max-width: 768px) {
+    .navigacija > ul {
+        margin-top:0;
+        margin-left:0 !important;
+    }
+    .navbar-collapse.collapse {
+        overflow:visible !important;
+    }
+}
+

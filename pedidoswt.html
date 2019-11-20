@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedidos</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+
+  </head>
+  <body>
+    <header class="header fixed-top hidden-xs hidden-sm">
+        <div class="container menu-top">      
+            <div class="row">
+                <div class="col-xs-12 text-right">
+                    <ul class="list-unstyled navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle topa" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-bell"></i>
+                                <i class="numheader">2</i>
+                                <span>Roberto</span>
+                                <i class="glyphicon glyphicon-menu-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">cambiar contraseña</a></li>
+                                <li><a href="#">cerrar cessión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 parent">
+                    <img class="img-responsive" src="images/randstad.png" title="Randstad" alt="Randstad" />
+                </div>
+                <div class="col-xs-10">
+                    <nav class="navbar menu" role="navegation">
+                       <div>
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Pedidos</a></li>
+                                <li><a href="#">Empleados</a></li>
+                                <li><a href="#">Validación</a></li>
+                                <li><a href="#">Evaluaciones</a></li>
+                                <li><a href="#">Precensia</a></li>
+                                <li><a href="#">Gestión de equipos</a></li>
+                                <li><a href="#">Informes</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container menu-top" id="submenu">
+            <div class="row">
+                <div class="col-xs-12">
+                    <nav class="navbar" role="navegation">
+                        <div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Encuentra trabajo</a></li>
+                                <li><a href="#">Envia tu cv</a></li>
+                                <li><a href="#">Validación</a></li>
+                                <li><a href="#">Especialidades</a></li>
+                                <li><a href="#">oficinas</a></li>
+                                <li><a href="#">Preguntas frecuentes</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div> 
+     </header>
+    <div id="wrapper">
+        <div class="mobile-menu-top hidden-md hidden-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-7">
+                        <img class="img-responsive" src="images/randstad.png" title="Randstad" alt="Randstad" />
+                    </div>
+                    <div class="col-xs-5">
+                        <ul class="list-inline mobile-top pull-right topa">
+                            <li><i class="glyphicon glyphicon-bell"></i></li>
+                            <li>
+                                <button type="button" class="hamburger is-closed hidden-md hidden-lg" data-toggle="offcanvas">
+                                    <span class="hamb-top"></span>
+                                    <span class="hamb-middle"></span>
+                                    <span class="hamb-bottom"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>    
+        <div class="overlay hidden-md hidden-lg"></div>
+        <!-- Sidebar -->
+        <nav class="navbar mobile-navbar hidden-md hidden-lg" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                                   
+                <li>Roberto</li>
+                <li>
+                    <a href="#">cambiar contraseña</a>
+                </li>
+                <li>
+                    <a href="#">cerrar session</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">pedidos<span class="caret pull-right"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Encuentra trabajo</a></li>
+                        <li><a href="#">Envia tu cv</a></li>
+                        <li><a href="#">Validación</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">oficinas</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">empleados <span class="caret pull-right"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Encuentra trabajo</a></li>
+                        <li><a href="#">Envia tu cv</a></li>
+                        <li><a href="#">Validación</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">oficinas</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">validación</a>
+                </li>
+                <li>
+                    <a href="#">evaluaciones</a>
+                </li>
+                <li>
+                    <a href="#">precensia</a>
+                </li>
+                <li>
+                    <a href="#">gestión de equipos</a>
+                </li>
+                <li>
+                    <a href="#">informes</a>
+                </li>
+           </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+       <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="title-top">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            <h1>pedidos</h1>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <a href=""><button type="button" class="btn button">nuevo pedido</button></a>
+                        </div>
+
+                    </div>    
+                </div>
+            </div>    
+            <div class="container filters">
+                <div class="row">
+                    <div id="filterstitle1" class="col-xs-6">
+                        <h2>filtros</h2>
+                    </div>
+                    <div class="col-xs-6">
+                         <a role="button" data-toggle="collapse" href="#collapseFilters" aria-expanded="true" aria-controls="collapseFilters">
+                            <i id="buttonfilters" class="glyphicon pull-right"></i>
+                         </a>    
+                    </div>
+                    <div id="filterstitle2" class="col-xs-6">
+                        <h2 class="pull-right">filtros</h2>
+                    </div>
+                </div>    
+                <div id="collapseFilters" class="collapse" aria-labelledby="headingFilters">
+                    <form>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4">
+                               <div class="form-group">
+                                    <label>dependencia</label>
+                                    <div class="form-control fcselect">
+                                        <select class="select">
+                                            <option></option>
+                                            <option selected="selected" value="1">todas</option>
+                                            <option value="2">option2</option>
+                                            <option value="3">option3</option>
+                                            <option value="4">option4</option>
+                                            <option value="5">option5</option>
+                                            <option value="6">option6</option>
+                                            <option value="7">option7</option>
+                                            <option value="8">option8</option>
+                                            <option value="9">option9</option>
+                                            <option value="10">option10</option>
+                                        </select>  
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                               <div class="form-group">
+                                    <label>taller</label>
+                                    <div class="form-control fcselect">
+                                        <select class="select">
+                                            <option></option>
+                                            <option selected="selected" value="1">todas</option>
+                                            <option value="2">option2</option>
+                                            <option value="3">option3</option>
+                                            <option value="4">option4</option>
+                                            <option value="5">option5</option>
+                                            <option value="6">option6</option>
+                                            <option value="7">option7</option>
+                                            <option value="8">option8</option>
+                                            <option value="9">option9</option>
+                                            <option value="10">option10</option>
+                                        </select>  
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                               <div class="form-group">
+                                    <label>equipo</label>
+                                    <div class="form-control fcselect">
+                                        <select class="select">
+                                            <option></option>
+                                            <option selected="selected" value="1">todas</option>
+                                            <option value="2">option2</option>
+                                            <option value="3">option3</option>
+                                            <option value="4">option4</option>
+                                            <option value="5">option5</option>
+                                            <option value="6">option6</option>
+                                            <option value="7">option7</option>
+                                            <option value="8">option8</option>
+                                            <option value="9">option9</option>
+                                            <option value="10">option10</option>
+                                        </select>  
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group has-feedback">
+                                    <label for="exampleFormControlInput3">nis</label>
+                                    <input type="text" class="form-control" placeholder="name@example.com">
+                                    <span class="form-control-feedback glyphicon"></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                               <div class="form-group">
+                                    <label>tipo de contrato</label>
+                                    <div class="form-control fcselect">
+                                        <select class="select">
+                                            <option></option>
+                                            <option selected="selected" value="1">todas</option>
+                                            <option value="2">option2</option>
+                                            <option value="3">option3</option>
+                                            <option value="4">option4</option>
+                                            <option value="5">option5</option>
+                                            <option value="6">option6</option>
+                                            <option value="7">option7</option>
+                                            <option value="8">option8</option>
+                                            <option value="9">option9</option>
+                                            <option value="10">option10</option>
+                                        </select>  
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                               <div class="form-group">
+                                    <label>motivo</label>
+                                    <div class="form-control fcselect">
+                                        <select class="select">
+                                            <option></option>
+                                            <option selected="selected" value="1">todas</option>
+                                            <option value="2">option2</option>
+                                            <option value="3">option3</option>
+                                            <option value="4">option4</option>
+                                            <option value="5">option5</option>
+                                            <option value="6">option6</option>
+                                            <option value="7">option7</option>
+                                            <option value="8">option8</option>
+                                            <option value="9">option9</option>
+                                            <option value="10">option10</option>
+                                        </select>  
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group has-feedback">
+                                    <label for="exampleFormControlInput3">DNI</label>
+                                    <input type="text" class="form-control" placeholder="name@example.com">
+                                    <span class="form-control-feedback glyphicon"></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group has-feedback">
+                                    <label for="exampleFormControlInput3">nombre del trabajador</label>
+                                    <input type="text" class="form-control" placeholder="name@example.com">
+                                    <span class="form-control-feedback glyphicon"></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                               <div class="form-group">
+                                    <label>motivo</label>
+                                    <div class="form-control fcselect">
+                                        <select class="select">
+                                            <option></option>
+                                            <option selected="selected" value="1">todas</option>
+                                            <option value="2">option2</option>
+                                            <option value="3">option3</option>
+                                            <option value="4">option4</option>
+                                            <option value="5">option5</option>
+                                            <option value="6">option6</option>
+                                            <option value="7">option7</option>
+                                            <option value="8">option8</option>
+                                            <option value="9">option9</option>
+                                            <option value="10">option10</option>
+                                        </select>  
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group has-feedback">
+                                    <label for="exampleFormControlInput3">nº de pedido</label>
+                                    <input type="text" class="form-control" placeholder="name@example.com">
+                                    <span class="form-control-feedback glyphicon"></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group has-feedback">
+                                    <label for="exampleFormControlInput3">fecha</label>
+                                    <input type="text" class="form-control" placeholder="name@example.com">
+                                    <span class="form-control-feedback glyphicon"></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group has-feedback">
+                                    <label for="exampleFormControlInput3">estado</label>
+                                    <input type="text" class="form-control" placeholder="name@example.com">
+                                    <span class="form-control-feedback glyphicon"></span>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="row filters-buttons">
+                            <div class="col-xs-12 col-sm-3 col-md-2">
+                                <a href="#"><button class="btn button-secondary button" type="button">limpiar</button></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 col-md-10">
+                                <button type="submit" class="btn button-primary button">buscar</button>
+                            </div>
+                        </div>    
+                    </form>
+                </div>    
+            </div>
+            <div class="resultorder">
+                <div class="flex-container ">
+                    <div class="flex-row">
+                        <div class="flex-col-6">
+                            <h2>resultados</h2>
+                        </div>
+                        <div class="flex-col-6">
+                            <a role="button" data-toggle="collapse" href="#collapseResults" aria-expanded="true" aria-controls="collapseResults">
+                                <i id="buttonresults" class="glyphicon glyphicon-chevron-down pull-right"></i>
+                            </a>    
+                        </div>
+                    </div>  
+                    <div id="collapseResults" class="collapse" aria-labelledby="headingResults">
+                        <form>
+                            <div class="flex-row tableflex title-order flex-h-100 text-center flex-align-items-center"> 
+                                <div class="flex-col-md-1"></div>
+                                <div class="flex-col-md-2">nº pedido</div>
+                                <div class="flex-col-md-2">nombre trabajador</div>
+                                <div class="flex-col-md-1">NIS</div>
+                                <div class="flex-col-md-1">motivo</div>
+                                <div class="flex-col-md-1">fecha inicio</div>
+                                <div class="flex-col-md-1">fecha fin</div>
+                                <div class="flex-col-md-2">estado</div>
+                                <div class="flex-col-md-1"></div>
+                            </div>  
+                            <div class="flex-row tableflex flex-h-100 text-center flex-align-items-center">
+                                <div class="flex-col-md-1"><input type="checkbox" value=""></div>
+                                <div class="flex-col-md-2">1801290001</div>
+                                <div class="flex-col-md-2">Roldán Rodriguéz, David</div>
+                                <div class="flex-col-md-1">-</div>
+                                <div class="flex-col-md-1">Absentismo</div>
+                                <div class="flex-col-md-1">30/05/2018</div>
+                                <div class="flex-col-md-1">30/05/2018</div>
+                                <div class="flex-col-md-2"><button type="button" class="btn validation">PDTE. VALIDACIÓN</button></div>
+                                <div class="tdcolor1 flex-col-md-1" id="tdcolor">
+                                    <div class="dropdown">
+                                        <a role="button" data-toggle="collapse" href="#tdmenu1" aria-expanded="true" aria-controls="tdmenu1">
+                                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                                        </a>
+                                        <ul id="tdmenu1" class="dropdown-menu">
+                                            <li><a href="#">ver documentos</a></li>
+                                            <li><a href="#">evaluar</a></li>
+                                            <li><a href="#">relatos</a></li>
+                                            <li><a href="#">histórico equipos</a></li>
+                                            <li><a href="#">histórico horarios</a></li>
+                                        </ul>
+                                    </div>    
+                                </div>
+                            </div>    
+                            <div class="flex-row tableflex flex-h-100 text-center flex-align-items-center">
+                                <div class="flex-col-1 flex-col-md-1"><input type="checkbox" value=""></div>
+                                <div class="flex-col-10 flexflex-column">
+                                    <div class="flex-col-md-2">1801290001</div>
+                                    <div class="flex-col-md-2">Roldán Rodriguéz, David</div>
+                                    <div class="flex-col-md-1">-</div>
+                                    <div class="flex-col-md-1">Absentismo</div>
+                                    <div class="flex-col-md-1">30/05/2018</div>
+                                    <div class="flex-col-md-1">30/05/2018</div>
+                                    <div class="flex-col-md-2"><button type="button" class="btn recruitment">PDTE. CONTRACIÓN</button></div>
+                                </div>    
+                                <div class="tdcolor1 flex-col-1 flex-col-md-1" id="tdcolor">
+                                    <div class="dropdown">
+                                        <a role="button" data-toggle="collapse" href="#tdmenu2" aria-expanded="true" aria-controls="tdmenu2">
+                                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                                        </a>
+                                        <ul id="tdmenu2" class="dropdown-menu">
+                                            <li><a href="#">ver documentos</a></li>
+                                            <li><a href="#">evaluar</a></li>
+                                            <li><a href="#">relatos</a></li>
+                                            <li><a href="#">histórico equipos</a></li>
+                                            <li><a href="#">histórico horarios</a></li>
+                                        </ul>
+                                    </div>    
+                                </div>
+                            </div>
+                        </form>   
+                    </div>    
+                </div>
+            </div>    
+        </div>
+        <!-- /#page-content-wrapper -->
+        <footer>
+            <div class="container">
+                <div class="row vertical-align">
+                    <div class="col-xs-12 col-md-6">
+                        <span>© 2018 Randstad España S.L.U. Todos los derechos reservados </span>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <img class="img-responsive col-right" src="images/randstad.png" title="Randstad" alt="Randstad" />
+                    </div>
+                </div>
+            </div>
+        </footer>  
+    </div>
+    <!-- /#wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/template.js"></script>
+  </body>
+</html>

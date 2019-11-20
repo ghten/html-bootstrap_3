@@ -1,0 +1,168 @@
+﻿.login-panel-1 {
+    background-color: @navy;
+    opacity: 0.9;
+}
+
+.login-panel-2 {
+    background-color: @white;
+}
+
+.login .panel {
+    background-color: transparent;
+}
+
+.login .panel-body {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+    height: 100%;
+    display: table-row;
+}
+.login .panel {
+	border: 0px;
+}
+.no-float {
+  display: table-cell;
+  float: none;
+}
+.login .panel-body h3{
+    color: @white;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.login .panel-body p{
+    color: @primarycolor;
+    text-align: right;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.login .form-group {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.login label {
+	font-weight: normal;
+    font-size: 14px;
+}
+.login .forget-pass {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.login .forget-pass a {
+    text-decoration: underline;
+    font-size: 14px;
+}
+.login .btn {
+	padding: 6px 12px;
+	font-size: 18px;
+    height: 56px;
+    width: 100%;
+    vertical-align: central;
+    line-height: 2.5;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.login .btn:hover, .login .btn:focus {
+	color: @white;
+}
+.footer-login {
+    height: 50px;
+}
+//----------------------------------------------------------
+//media querie
+//----------------------------------------------------------
+@media (max-width: @screen-xs-end) {
+    .divCentrado {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .row-logo {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+   .body-login {
+        background-color: @secondarycolor;
+  }
+}    
+@media (min-width: @screen-xs) and (max-width: @screen-sm-end) {
+    .divCentrado {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .row-logo {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+   .body-login {
+        background-color: @secondarycolor;
+  }
+
+}
+@media (min-width: @screen-sm) and (max-width: @screen-md-end) { 
+    .divCentrado {
+        margin-right: 15px;
+        margin-left: 15px;
+    } 
+    .row-logo {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+   .body-login {
+        background-color: @secondarycolor;
+  }
+}
+@media (min-width: @screen-md) and (max-width: @screen-lg-end) { 
+    .divCentrado {
+        position: absolute;
+        left: 30%;
+        top: 15%;
+        width: 40%;
+        display: table;
+    }
+    .body-login {
+        background: url("../images/crossing.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .footer-bottom {
+	    bottom: 0;
+	    margin-bottom: 0;
+	    border-width: 1px 0 0;
+        position: fixed;
+	    right: 0;
+	    left: 0;
+	    z-index: 1030;
+    }
+}    
+@media (min-width: @screen-lg) { 
+    .divCentrado {
+        position: absolute;
+        left: 30%;
+        top: 15%;
+        width: 40%;
+        display: table;
+    }
+    .body-login {
+        background: url("../images/crossing.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .footer-bottom {
+	    bottom: 0;
+	    margin-bottom: 0;
+	    border-width: 1px 0 0;
+        position: fixed;
+	    right: 0;
+	    left: 0;
+	    z-index: 1030;
+    }
+}
+
+
+

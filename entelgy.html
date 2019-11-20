@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entelgy</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+
+  </head>
+  <body>
+    <div class="header fixed-top container-fluid menu-top hidden-xs hidden-sm">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="list-unstyled navbar-right col-pad-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle topa" data-toggle="dropdown">
+                            <i class="glyphicon glyphicon-bell"></i>
+                            <i class="numheader">2</i>
+                            <span>Roberto</span>
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">cambiar contraseña</a></li>
+                            <li><a href="#">cerrar cessión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2 parent">
+                <img class="img-responsive" src="images/randstad.png" title="Randstad" alt="Randstad" />
+            </div>
+            <div class="col-xs-10">
+                <nav class="navbar menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active" data-submenu="sub1"><a href="#">Pedidos</a></li>
+                        <li data-submenu="sub2"><a href="#">Empleados</a></li>
+                        <li data-submenu="sub3"><a href="#">Validación</a></li>
+                        <li data-submenu="sub4"><a href="#">Evaluaciones</a></li>
+                        <li data-submenu="sub5"><a href="#">Precensia</a></li>
+                        <li data-submenu="sub6"><a href="#">Gestión de equipos</a></li>
+                        <li data-submenu="sub7"><a href="#">Informes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr>
+        <nav class="navbar menu-top" id="submenu">
+            <ul id="sub1" class="nav navbar-nav">
+                <li><a href="#">Encuentra trabajo</a></li>
+                <li><a href="#">Envia tu cv</a></li>
+                <li><a href="#">Validación</a></li>
+                <li><a href="#">Especialidades</a></li>
+                <li><a href="#">oficinas</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+            <ul id="sub2" class="nav navbar-nav">
+                <li><a href="#">XXXXXXXXXXXX</a></li>
+                <li><a href="#">Envia tu cv</a></li>
+                <li><a href="#">Validación</a></li>
+                <li><a href="#">Especialidades</a></li>
+                <li><a href="#">oficinas</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </nav>
+    </div>
+      <div id="wrapper">
+        <div class="mobile-menu-top hidden-md hidden-lg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-7">
+                        <img class="img-responsive" src="images/randstad.png" title="Randstad" alt="Randstad" />
+                    </div>
+                    <div class="col-xs-5">
+                        <ul class="list-inline mobile-top pull-right topa">
+                            <li><i class="glyphicon glyphicon-bell"></i></li>
+                            <li>
+                                <button type="button" class="hamburger is-closed hidden-md hidden-lg" data-toggle="offcanvas">
+                                    <span class="hamb-top"></span>
+                                    <span class="hamb-middle"></span>
+                                    <span class="hamb-bottom"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>    
+        <div class="overlay hidden-md hidden-lg"></div>
+        <!-- Sidebar -->
+        <nav class="navbar mobile-navbar hidden-md hidden-lg" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                                   
+                <li>Roberto</li>
+                <li>
+                    <a href="#">cambiar contraseña</a>
+                </li>
+                <li>
+                    <a href="#">cerrar session</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">pedidos<span class="caret pull-right"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Encuentra trabajo</a></li>
+                        <li><a href="#">Envia tu cv</a></li>
+                        <li><a href="#">Validación</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">oficinas</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">empleados <span class="caret pull-right"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Encuentra trabajo</a></li>
+                        <li><a href="#">Envia tu cv</a></li>
+                        <li><a href="#">Validación</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">oficinas</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">validación</a>
+                </li>
+                <li>
+                    <a href="#">evaluaciones</a>
+                </li>
+                <li>
+                    <a href="#">precensia</a>
+                </li>
+                <li>
+                    <a href="#">gestión de equipos</a>
+                </li>
+                <li>
+                    <a href="#">informes</a>
+                </li>
+           </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+       <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="title-top">
+                 <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            <h1>pedidos</h1>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <a href=""><button type="button" class="btn button col-right">nuevo pedido</button></a>
+                        </div>
+
+                    </div>    
+                </div>
+            </div>    
+            <div class="container-fluid presentation">
+                <form>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="#"><button class="btn button-primary-small button-small" type="button">call to action</button></a>
+                        </div>    
+                        <div class="col-md-2">
+                            <a href="#"><button class="btn button-secondary-small button-small">call to action</button></a>
+                        </div>    
+                        <div class="col-md-2">
+                            <a href="#"><button class="btn button-primary button" type="button">call to action</button></a>
+                        </div> 
+                        <div class="col-md-2">
+                            <a href="#"><button class="btn button-secondary button">call to action</button></a>
+                        </div>    
+                        <div class="col-md-2">
+                            <a href="#"><button class="btn button-primary-white button">call to action</button></a>
+                        </div>   
+                    </div>
+                    <div class="row presentation">
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <input type="email" class="form-control" disabled id="exampleFormControlInput1" placeholder="input-disabled">
+                                <span class="form-control-feedback glyphicon" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control active" placeholder="input - active">
+                                <span class="form-control-feedback glyphicon"></span> 
+                            </div>
+                        </div>   
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" placeholder="input - neutral">
+                                <span class="form-control-feedback glyphicon"></span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control success" value="input - success">
+                                <span class="form-control-feedback glyphicon"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control" value="input - readonly" readonly>
+                                <span class="form-control-feedback glyphicon"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                               <input type="text" class="form-control filledin" value="input - filledin">
+                                <span class="form-control-feedback glyphicon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <label for="exampleFormControlInput2">inputfield-neutral</label>
+                                <input type="text" class="form-control" placeholder="input">
+                                <span class="form-control-feedback glyphicon"></span> 
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <label for="exampleFormControlInput3">error</label>
+                                <input type="text" class="form-control has-error" value="input">
+                                <span class="form-control-feedback glyphicon"></span>
+                                <span class="help-block"><strong>message</strong></span>
+                            </div>
+                        </div>    
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control has-error" value="input - error">
+                                <span class="form-control-feedback glyphicon"></span>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control no-icon" value="label - inputfield">
+                                <span class="form-control-feedback glyphicon"></span>
+                            </div>
+                        </div> 
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="form-control fcselect">
+                                    <select class="select">
+                                        <option></option>
+                                        <option selected="selected" value="1">option1</option>
+                                        <option value="2">option2</option>
+                                        <option value="3">option3</option>
+                                        <option value="4">option4</option>
+                                        <option value="5">option5</option>
+                                        <option value="6">option6</option>
+                                        <option value="7">option7</option>
+                                        <option value="8">option8</option>
+                                        <option value="9">option9</option>
+                                        <option value="10">option10</option>
+                                    </select>  
+                                </div>    
+                            </div>
+                        </div>    
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Select</label>
+                                <div class="form-control fcselect">
+                                    <select class="select">
+                                        <option></option>
+                                        <option selected="selected" value="1">option1</option>
+                                        <option value="2">option2</option>
+                                        <option value="3">option3</option>
+                                        <option value="4">option4</option>
+                                        <option value="5">option5</option>
+                                        <option value="6">option6</option>
+                                        <option value="7">option7</option>
+                                        <option value="8">option8</option>
+                                        <option value="9">option9</option>
+                                        <option value="10">option10</option>
+                                    </select>  
+                                </div>    
+                            </div>
+                        </div> 
+                     </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <textarea class="form-control has-error" rows="3">
+error - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                             </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <label>text error</label>
+                                <textarea class="form-control has-error" rows="3">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                                <span class="help-block"><strong>message</strong></span>
+                             </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <textarea class="form-control active" rows="3">
+active - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                             </div>
+                        </div>
+                    </div>
+                        <div class="row">    
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <label>text neutral</label>
+                                <textarea class="form-control neutral" rows="3">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                             </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-feedback">
+                                <textarea class="form-control neutral" rows="3">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                             </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row vertical-align">
+                    <div class="col-xs-12 col-md-6">
+                        <span>© 2018 Randstad España S.L.U. Todos los derechos reservados </span>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <img class="img-responsive col-right" src="images/randstad.png" title="Randstad" alt="Randstad" />
+                    </div>
+                </div>
+            </div>
+        </footer>  
+    </div>
+    <!-- /#wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/template.js"></script>
+  </body>
+</html>
